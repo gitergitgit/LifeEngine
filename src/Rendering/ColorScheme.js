@@ -11,6 +11,14 @@ var color_scheme = {
     "armor":"#7230DB",
     "eye":"#B6C1EA",
     "eye-slit": "#0E1318"
+    "neuron": "#39282A"
+    "neuron-center": "#3C3C2D"
+    "trigger": "#4F3546"
+    "releaser": "#E37E4B"
+    "germ": "#ADC967"
+    "receptor": "#1CA5B4"
+    "grabber": "#E8E6C5"
+    "grabber-line": "#4C4D39"
 }
 
 // Renderer controls access to a canvas. There is one renderer for each canvas
