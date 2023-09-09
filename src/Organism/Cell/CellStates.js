@@ -56,6 +56,36 @@ class Eye extends CellState {
         super('eye');
         this.slit_color = 'black';
     }
+}
+class Neuron extends CellState {
+    constructor() {
+        super('neuron');
+    }
+}
+class Trigger extends CellState {
+    constructor() {
+        super('trigger');
+    }
+}
+class Releaser extends CellState {
+    constructor() {
+        super('releaser');
+    }
+}
+class Germ extends CellState {
+    constructor() {
+        super('germ');
+    }
+}
+class Receptor extends CellState {
+    constructor() {
+        super('receptor');
+    }
+}
+class Grabber extends CellState {
+    constructor() {
+        super('grabber');
+    }
     render(ctx, cell, size) {
         ctx.fillStyle = this.color;
         ctx.fillRect(cell.x, cell.y, size, size);
@@ -84,9 +114,15 @@ const CellStates = {
     killer: new Killer(),
     armor: new Armor(),
     eye: new Eye(),
+    neuron: new Neuron(), 
+    trigger: new Trigger(),
+    releaser: new Releaser(),
+    germ: new Germ(),
+    receptor: new Receptor(),
+    grabber: new Grabber(),
     defineLists() {
-        this.all = [this.empty, this.food, this.wall, this.mouth, this.producer, this.mover, this.killer, this.armor, this.eye]
-        this.living = [this.mouth, this.producer, this.mover, this.killer, this.armor, this.eye];
+        this.all = [this.empty, this.food, this.wall, this.mouth, this.producer, this.mover, this.killer, this.armor, this.eye, this.neuron, this.trigger, this.releaser, this.germ, this.receptor, this.grabber]
+        this.living = [this.mouth, this.producer, this.mover, this.killer, this.armor, this.eye, this.neuron, this.trigger, this.releaser, this.germ, this.receptor, this.grabber];
     },
     getRandomName: function() {
         return this.all[Math.floor(Math.random() * this.all.length)].name;
