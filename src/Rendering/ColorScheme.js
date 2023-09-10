@@ -19,6 +19,9 @@ var color_scheme = {
     "receptor": "#1CA5B4"
     "grabber": "#E8E6C5"
     "grabber-line": "#4C4D39"
+    "signal": "#3D3F59"
+    "gamete": "#25332B"
+    "egg": "#595959"
 }
 
 // Renderer controls access to a canvas. There is one renderer for each canvas
