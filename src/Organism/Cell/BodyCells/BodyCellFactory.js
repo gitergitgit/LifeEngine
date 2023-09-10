@@ -4,6 +4,12 @@ const MoverCell = require("./MoverCell");
 const KillerCell = require("./KillerCell");
 const ArmorCell = require("./ArmorCell");
 const EyeCell = require("./EyeCell");
+const NeuronCell = require("./NeuronCell");
+const TriggerCell = require("./TriggerCell");
+const ReleaserCell = require("./ReleaserCell");
+const GermCell = require("./GermCell");
+const ReceptorCell = require("./ReceptorCell");
+const GrabberCell = require("./GrabberCell");
 const CellStates = require("../CellStates");
 
 
@@ -16,6 +22,12 @@ const BodyCellFactory = {
         type_map[CellStates.killer.name] = KillerCell;
         type_map[CellStates.armor.name] = ArmorCell;
         type_map[CellStates.eye.name] = EyeCell;
+        type_map[CellStates.neuron.name] = NeuronCell;
+        type_map[CellStates.trigger.name] = TriggerCell;
+        type_map[CellStates.releaser.name] = ReleaserCell;
+        type_map[CellStates.germ.name] = GermCell;
+        type_map[CellStates.receptor.name] = ReceptorCell;
+        type_map[CellStates.grabber.name] = GrabberCell;
         this.type_map = type_map;
     },
 
