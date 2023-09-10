@@ -120,9 +120,12 @@ const CellStates = {
     germ: new Germ(),
     receptor: new Receptor(),
     grabber: new Grabber(),
+    signal: new Signal(),
+    gamete: new Gamete(),
+    egg: new Egg(),
     defineLists() {
-        this.all = [this.empty, this.food, this.wall, this.mouth, this.producer, this.mover, this.killer, this.armor, this.eye, this.neuron, this.trigger, this.releaser, this.germ, this.receptor, this.grabber]
-        this.living = [this.mouth, this.producer, this.mover, this.killer, this.armor, this.eye, this.neuron, this.trigger, this.releaser, this.germ, this.receptor, this.grabber];
+        this.all = [this.empty, this.food, this.wall, this.mouth, this.producer, this.mover, this.killer, this.armor, this.eye, this.neuron, this.trigger, this.releaser, this.germ, this.receptor, this.grabber, this. signal, this.gamete, this.egg]
+        this.living = [this.mouth, this.producer, this.mover, this.killer, this.armor, this.eye, this.neuron, this.trigger, this.releaser, this.germ, this.receptor, this.grabber, this.egg];
     },
     getRandomName: function() {
         return this.all[Math.floor(Math.random() * this.all.length)].name;
