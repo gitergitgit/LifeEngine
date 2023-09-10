@@ -86,6 +86,21 @@ class Grabber extends CellState {
     constructor() {
         super('grabber');
     }
+}
+class Signal extends CellState {
+    constructor() {
+        super('signal');
+    }
+}
+class Gamete extends CellState {
+    constructor() {
+        super('gamete');
+    }
+}
+class Egg extends CellState {
+    constructor() {
+        super('egg');
+    }
     render(ctx, cell, size) {
         ctx.fillStyle = this.color;
         ctx.fillRect(cell.x, cell.y, size, size);
