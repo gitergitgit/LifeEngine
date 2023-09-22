@@ -97,9 +97,9 @@ class Gamete extends CellState {
         super('gamete');
     }
 }
-class Egg extends CellState {
+class Zygote extends CellState {
     constructor() {
-        super('egg');
+        super('zygote');
     }
     render(ctx, cell, size) {
         ctx.fillStyle = this.color;
@@ -137,9 +137,9 @@ const CellStates = {
     grabber: new Grabber(),
     signal: new Signal(),
     gamete: new Gamete(),
-    egg: new Egg(),
+    egg: new Zygote(),
     defineLists() {
-        this.all = [this.empty, this.food, this.wall, this.mouth, this.producer, this.mover, this.killer, this.armor, this.eye, this.neuron, this.trigger, this.releaser, this.germ, this.receptor, this.grabber, this. signal, this.gamete, this.egg]
+        this.all = [this.empty, this.food, this.wall, this.mouth, this.producer, this.mover, this.killer, this.armor, this.eye, this.neuron, this.trigger, this.releaser, this.germ, this.receptor, this.grabber, this. signal, this.gamete, this.zygote]
         this.living = [this.mouth, this.producer, this.mover, this.killer, this.armor, this.eye, this.neuron, this.trigger, this.releaser, this.germ, this.receptor, this.grabber, this.egg];
     },
     getRandomName: function() {
